@@ -29,7 +29,7 @@ conda activate enf-jax
 
 Install the relevant dependencies.
 ```
-conda install pytorch==2.3.0 torchvision==0.18.0 torchaudio==2.3.0 pytorch-cuda=12.1 -c pytorch -c nvidia
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 pip install --upgrade "jax[cuda12]" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
 pip install optax flax orbax wandb matplotlib trimesh hydra-core tqdm netCDF4 py-pde
 conda install -c conda-forge dedalus
